@@ -1,0 +1,140 @@
+{
+    "info": {
+        "_postman_id": "9a91dfe9-355f-448e-9e90-0f26d3e23d7b",
+        "name": "vemoapp",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "GetTask",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8080/tasks/1",
+                    "path": [
+                        "tasks",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "\n\n"
+                }
+            }
+        },
+        {
+            "name": "CreateTask",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8080/tasks",
+                    "path": [
+                        "tasks"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"test\",\n  \"description\": \"description\"\n}"
+                }
+            }
+        },
+        {
+            "name": "DeleteTask",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://127.0.0.1:8080/tasks/1",
+                    "path": [
+                        "tasks",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8080"
+                }
+            }
+        },
+        {
+            "name": "UpdateTask",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://127.0.0.1:8080/tasks/1",
+                    "path": [
+                        "tasks",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"test1\",\n  \"description\": \"description1\"\n}"
+                }
+            }
+        },
+        {
+            "name": "GetTasks",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8080/tasks",
+                    "path": [
+                        "tasks"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8080"
+                }
+            }
+        }
+    ]
+}
